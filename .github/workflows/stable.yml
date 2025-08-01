@@ -46,9 +46,6 @@ jobs:
 
     - name: Build docs
       run: |
-        
-    - name: Build docs
-      run: |
         rm -rf ./release
         npm run build:docs
 
