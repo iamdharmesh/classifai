@@ -2,16 +2,16 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: ClassifAI 3.5.0\n"
+"Project-Id-Version: ClassifAI 3.6.0-dev\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/classifai\n"
-"POT-Creation-Date: 2025-07-14 16:45:36+00:00\n"
+"POT-Creation-Date: 2025-08-01 10:36:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: node-wp-i18n 1.2.7\n"
+"X-Generator: node-wp-i18n 1.2.8\n"
 
 #: includes/Classifai/Admin/Onboarding.php:59
 msgid "1"
@@ -256,22 +256,46 @@ msgstr ""
 msgid "You are not allowed to access this page."
 msgstr ""
 
-#: includes/Classifai/Admin/Settings.php:46
+#: includes/Classifai/Admin/Settings.php:47
 #: includes/Classifai/Services/ServicesManager.php:288
 #. Translators: Menu title.
 #. Translators: Main title.
 msgid "ClassifAI %s"
 msgstr ""
 
-#: includes/Classifai/Admin/Settings.php:292
+#: includes/Classifai/Admin/Settings.php:293
 msgid "Feature being used."
 msgstr ""
 
-#: includes/Classifai/Admin/Settings.php:342
-msgid "Invalid feature."
+#: includes/Classifai/Admin/Settings.php:314
+msgid "Feature ID to get reusable credentials for."
 msgstr ""
 
-#: includes/Classifai/Admin/Settings.php:516
+#: includes/Classifai/Admin/Settings.php:335
+msgid "Source feature ID to copy credentials from."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:342
+msgid "Target feature ID to copy credentials to."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:349
+msgid "Provider ID to copy."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:400
+msgid "Invalid Feature."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:405
+msgid "Invalid Provider."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:600
+msgid "Failed to copy credentials."
+msgstr ""
+
+#: includes/Classifai/Admin/Settings.php:625
 msgid ""
 "<a href=\"https://classifaiplugin.com/#cta\" target=\"_blank\" "
 "rel=\"noopener noreferrer\">Register</a> for a free ClassifAI key to "
@@ -491,6 +515,7 @@ msgid "Classification"
 msgstr ""
 
 #: includes/Classifai/Features/Classification.php:44
+#: includes/Classifai/Helpers/CredentialReuse.php:342
 msgid "IBM Watson NLU"
 msgstr ""
 
@@ -498,6 +523,7 @@ msgstr ""
 #: includes/Classifai/Features/RecommendedContent.php:34
 #: includes/Classifai/Features/Smart404.php:36
 #: includes/Classifai/Features/TermCleanup.php:66
+#: includes/Classifai/Helpers/CredentialReuse.php:332
 #: includes/Classifai/Providers/OpenAI/Embeddings.php:325
 #: includes/Classifai/Providers/OpenAI/Embeddings.php:346
 msgid "OpenAI Embeddings"
@@ -519,6 +545,7 @@ msgstr ""
 #: includes/Classifai/Features/ImageTextExtraction.php:48
 #: includes/Classifai/Features/KeyTakeaways.php:48
 #: includes/Classifai/Features/TitleGeneration.php:60
+#: includes/Classifai/Helpers/CredentialReuse.php:343
 msgid "Ollama"
 msgstr ""
 
@@ -643,6 +670,7 @@ msgstr ""
 #: includes/Classifai/Features/ImageTextExtraction.php:47
 #: includes/Classifai/Features/KeyTakeaways.php:46
 #: includes/Classifai/Features/TitleGeneration.php:55
+#: includes/Classifai/Helpers/CredentialReuse.php:330
 msgid "OpenAI ChatGPT"
 msgstr ""
 
@@ -651,6 +679,7 @@ msgstr ""
 #: includes/Classifai/Features/ExcerptGeneration.php:57
 #: includes/Classifai/Features/KeyTakeaways.php:47
 #: includes/Classifai/Features/TitleGeneration.php:57
+#: includes/Classifai/Helpers/CredentialReuse.php:336
 msgid "Azure OpenAI"
 msgstr ""
 
@@ -714,6 +743,7 @@ msgstr ""
 #: includes/Classifai/Features/DescriptiveTextGenerator.php:47
 #: includes/Classifai/Features/ExcerptGeneration.php:58
 #: includes/Classifai/Features/TitleGeneration.php:58
+#: includes/Classifai/Helpers/CredentialReuse.php:346
 msgid "xAI Grok"
 msgstr ""
 
@@ -1095,6 +1125,7 @@ msgid "Image Generation"
 msgstr ""
 
 #: includes/Classifai/Features/ImageGeneration.php:37
+#: includes/Classifai/Helpers/CredentialReuse.php:331
 msgid "OpenAI Images"
 msgstr ""
 
@@ -1315,6 +1346,7 @@ msgid "Moderation"
 msgstr ""
 
 #: includes/Classifai/Features/Moderation.php:34
+#: includes/Classifai/Helpers/CredentialReuse.php:333
 msgid "OpenAI Moderation"
 msgstr ""
 
@@ -1408,6 +1440,7 @@ msgid "Recommended Content"
 msgstr ""
 
 #: includes/Classifai/Features/RecommendedContent.php:35
+#: includes/Classifai/Helpers/CredentialReuse.php:339
 msgid "Microsoft Azure AI Personalizer"
 msgstr ""
 
@@ -1677,14 +1710,17 @@ msgid "Text to Speech"
 msgstr ""
 
 #: includes/Classifai/Features/TextToSpeech.php:68
+#: includes/Classifai/Helpers/CredentialReuse.php:340
 msgid "Amazon Polly"
 msgstr ""
 
 #: includes/Classifai/Features/TextToSpeech.php:69
+#: includes/Classifai/Helpers/CredentialReuse.php:338
 msgid "Microsoft Azure AI Speech"
 msgstr ""
 
 #: includes/Classifai/Features/TextToSpeech.php:70
+#: includes/Classifai/Helpers/CredentialReuse.php:335
 msgid "OpenAI Text to Speech"
 msgstr ""
 
@@ -1787,6 +1823,27 @@ msgstr ""
 
 #: includes/Classifai/Features/TitleGeneration.php:337
 msgid "Add a custom prompt, if desired."
+msgstr ""
+
+#: includes/Classifai/Helpers/CredentialReuse.php:334
+msgid "OpenAI Speech to Text"
+msgstr ""
+
+#: includes/Classifai/Helpers/CredentialReuse.php:337
+msgid "Azure AI Vision"
+msgstr ""
+
+#: includes/Classifai/Helpers/CredentialReuse.php:341
+msgid "Google AI Gemini API"
+msgstr ""
+
+#: includes/Classifai/Helpers/CredentialReuse.php:344
+#: includes/Classifai/Providers/Localhost/OllamaEmbeddings.php:248
+msgid "Ollama Embeddings"
+msgstr ""
+
+#: includes/Classifai/Helpers/CredentialReuse.php:345
+msgid "Ollama Multimodal"
 msgstr ""
 
 #: includes/Classifai/Helpers.php:381
@@ -2621,10 +2678,6 @@ msgstr ""
 msgid ""
 "Content generation is disabled or Ollama authentication failed. Please "
 "check your settings."
-msgstr ""
-
-#: includes/Classifai/Providers/Localhost/OllamaEmbeddings.php:248
-msgid "Ollama Embeddings"
 msgstr ""
 
 #: includes/Classifai/Providers/Localhost/OllamaEmbeddings.php:401

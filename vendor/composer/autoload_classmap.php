@@ -364,6 +364,7 @@ return array(
     'Classifai\\Features\\TermCleanupEPIntegration' => $baseDir . '/includes/Classifai/Features/TermCleanupEPIntegration.php',
     'Classifai\\Features\\TextToSpeech' => $baseDir . '/includes/Classifai/Features/TextToSpeech.php',
     'Classifai\\Features\\TitleGeneration' => $baseDir . '/includes/Classifai/Features/TitleGeneration.php',
+    'Classifai\\Helpers\\CredentialReuse' => $baseDir . '/includes/Classifai/Helpers/CredentialReuse.php',
     'Classifai\\Normalizer' => $baseDir . '/includes/Classifai/Normalizer.php',
     'Classifai\\Plugin' => $baseDir . '/includes/Classifai/Plugin.php',
     'Classifai\\Providers\\AWS\\AmazonPolly' => $baseDir . '/includes/Classifai/Providers/AWS/AmazonPolly.php',

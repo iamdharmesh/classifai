@@ -461,6 +461,7 @@ class ComposerStaticInit5f8e7a0c0c12a517240bd7bee9f43f1f
         'Classifai\\Features\\TermCleanupEPIntegration' => __DIR__ . '/../..' . '/includes/Classifai/Features/TermCleanupEPIntegration.php',
         'Classifai\\Features\\TextToSpeech' => __DIR__ . '/../..' . '/includes/Classifai/Features/TextToSpeech.php',
         'Classifai\\Features\\TitleGeneration' => __DIR__ . '/../..' . '/includes/Classifai/Features/TitleGeneration.php',
+        'Classifai\\Helpers\\CredentialReuse' => __DIR__ . '/../..' . '/includes/Classifai/Helpers/CredentialReuse.php',
         'Classifai\\Normalizer' => __DIR__ . '/../..' . '/includes/Classifai/Normalizer.php',
         'Classifai\\Plugin' => __DIR__ . '/../..' . '/includes/Classifai/Plugin.php',
         'Classifai\\Providers\\AWS\\AmazonPolly' => __DIR__ . '/../..' . '/includes/Classifai/Providers/AWS/AmazonPolly.php',
